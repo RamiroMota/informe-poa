@@ -124,23 +124,22 @@ export default function Home() {
                       <SelectValue placeholder="Seleccionar programa" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="licenciatura-ingles">LIC. EN ARQUITECTURA</SelectItem>
-                      <SelectItem value="licenciatura-matematicas">ING. EN ANIMACIÓN Y DISEÑO DE CONTENIDOS DIGITALES</SelectItem>
-                      <SelectItem value="licenciatura-administracion">LIC. ADMINISTRACIÓN DE EMPRESAS</SelectItem>
-                      <SelectItem value="ingenieria-sistemas">LIC. EN CONTADURÍA PUBLICA</SelectItem>
-                      <SelectItem value="ingenieria-sistemas">LIC. EN MERCADOTECNIA</SelectItem>
-                      <SelectItem value="ingenieria-sistemas">LIC. EN PSICOLOGÍA</SelectItem>
-                      <SelectItem value="ingenieria-sistemas">LIC. EN DERECHO</SelectItem>
-                      <SelectItem value="ingenieria-sistemas">LIC. EN EDUCACIÓN FÍSICA Y DEPORTIVA</SelectItem>
-                      <SelectItem value="ingenieria-sistemas">LIC. EN ENFERMERÍA</SelectItem>
-                      <SelectItem value="ingenieria-sistemas">LIC. EN PSICOLOGÍA CLÍNICA</SelectItem>
-                      <SelectItem value="ingenieria-sistemas">LIC. EN PEDAGOGÍA</SelectItem>
-                      <SelectItem value="ingenieria-sistemas">LIC. QUÍMICO FARMACOBIOLOGO</SelectItem>
-                      <SelectItem value="ingenieria-sistemas">LIC. CIRUJANO ODONTOLOGO</SelectItem>
-                      <SelectItem value="ingenieria-sistemas">LIC. MEDICO CIRUJANO</SelectItem>
-                      <SelectItem value="ingenieria-sistemas">DIRECCIÓN ACADÉMICA Y ADMINISTRATIVA</SelectItem>
-                      <SelectItem value="ingenieria-sistemas">DIRECCIÓN DE PLANEACIÓN EDUCATIVA</SelectItem>
-                      <SelectItem value="ingenieria-sistemas">DIRECCIÓN DE EDUCACIÓN EN LÍNEA</SelectItem>
+                      <SelectItem value="licenciatura-arquitectura">LIC. EN ARQUITECTURA</SelectItem>
+                      <SelectItem value="ingenieria-animacion">ING. EN ANIMACIÓN Y DISEÑO DE CONTENIDOS DIGITALES</SelectItem>
+                      <SelectItem value="licenciatura-empresas">LIC. ADMINISTRACIÓN DE EMPRESAS</SelectItem>
+                      <SelectItem value="licenciatura-contaduria">LIC. EN CONTADURÍA PUBLICA</SelectItem>
+                      <SelectItem value="licenciatura-mercadotecnia">LIC. EN MERCADOTECNIA</SelectItem>
+                      <SelectItem value="licenciatura-psicologia">LIC. EN PSICOLOGÍA</SelectItem>
+                      <SelectItem value="licenciatura-derecho">LIC. EN DERECHO</SelectItem>
+                      <SelectItem value="licenciatura-educacion">LIC. EN EDUCACIÓN FÍSICA Y DEPORTIVA</SelectItem>
+                      <SelectItem value="licenciatura-enfermeria">LIC. EN ENFERMERÍA</SelectItem>
+                      <SelectItem value="licenciatura-pedagogia">LIC. EN PEDAGOGÍA</SelectItem>
+                      <SelectItem value="licenciatura-quimica">LIC. QUÍMICO FARMACOBIOLOGO</SelectItem>
+                      <SelectItem value="licenciatura-odontologia">LIC. CIRUJANO ODONTOLOGO</SelectItem>
+                      <SelectItem value="licenciatura-cirujano">LIC. MEDICO CIRUJANO</SelectItem>
+                      <SelectItem value="direccion-academia">DIRECCIÓN ACADÉMICA Y ADMINISTRATIVA</SelectItem>
+                      <SelectItem value="direccion-planificacion">DIRECCIÓN DE PLANEACIÓN EDUCATIVA</SelectItem>
+                      <SelectItem value="direccion-linea">DIRECCIÓN DE EDUCACIÓN EN LÍNEA</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
@@ -154,19 +153,19 @@ export default function Home() {
                       <SelectValue placeholder="Seleccionar cargo" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="fernando-arreola">Fernando Arreola Merino</SelectItem>
-                      <SelectItem value="maria-gonzalez">Emilio Curiel Herrera</SelectItem>
-                      <SelectItem value="carlos-rodriguez">Sergio Editson Echeverry Diaz</SelectItem>
-                      <SelectItem value="ana-martinez">Marisol Salas Magaña</SelectItem>
-                      <SelectItem value="ana-martinez">Reyna Del C. Cancino Robles</SelectItem>
-                      <SelectItem value="ana-martinez">Carlos Valentín Veyna Martínez</SelectItem>
-                      <SelectItem value="ana-martinez">Susana Sommers Manga</SelectItem>
-                      <SelectItem value="ana-martinez">Benjamín Rodríguez Aquino</SelectItem>
-                      <SelectItem value="ana-martinez">Alejandro Fajardo Guerrero</SelectItem>
-                      <SelectItem value="ana-martinez">Erick Vázquez Yañez</SelectItem>
-                      <SelectItem value="ana-martinez">Darwin González Sánchez</SelectItem>
-                      <SelectItem value="ana-martinez">Carlos Martin Santos Llaven</SelectItem>
-                      <SelectItem value="ana-martinez">Verónica Nevárez Ares</SelectItem>
+                      <SelectItem value="Fernando Arreola Merino">Fernando Arreola Merino</SelectItem>
+                      <SelectItem value="Emilio Curiel Herrera">Emilio Curiel Herrera</SelectItem>
+                      <SelectItem value="Sergio Editson Echeverry Diaz">Sergio Editson Echeverry Diaz</SelectItem>
+                      <SelectItem value="Marisol Salas Magaña">Marisol Salas Magaña</SelectItem>
+                      <SelectItem value="Reyna Del C. Cancino Robles">Reyna Del C. Cancino Robles</SelectItem>
+                      <SelectItem value="Carlos Valentín Veyna Martínez">Carlos Valentín Veyna Martínez</SelectItem>
+                      <SelectItem value="Susana Sommers Manga">Susana Sommers Manga</SelectItem>
+                      <SelectItem value="Benjamín Rodríguez Aquino">Benjamín Rodríguez Aquino</SelectItem>
+                      <SelectItem value="Alejandro Fajardo Guerrero">Alejandro Fajardo Guerrero</SelectItem>
+                      <SelectItem value="Erick Vázquez Yañez">Erick Vázquez Yañez</SelectItem>
+                      <SelectItem value="Darwin González Sánchez">Darwin González Sánchez</SelectItem>
+                      <SelectItem value="Carlos Martin Santos Llaven">Carlos Martin Santos Llaven</SelectItem>
+                      <SelectItem value="Verónica Nevárez Ares">Verónica Nevárez Ares</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
@@ -183,11 +182,11 @@ export default function Home() {
                     </SelectTrigger>
                     <SelectContent>
                       <SelectItem value="ago24-ago25">Ago 24 - Ago 25</SelectItem>
-                      <SelectItem value="ago23-ago24">Ago 25 - Ago 26</SelectItem>
-                      <SelectItem value="ene24-jul24">Ago 26 - Ago 27</SelectItem>
-                      <SelectItem value="ene25-jul25">Ago 27 - Ago 28</SelectItem>
-                      <SelectItem value="ene25-jul25">Ago 28 - Ago 29</SelectItem>
-                      <SelectItem value="ene25-jul25">Ago 29 - Ago 30</SelectItem>
+                      <SelectItem value="ago25-ago26">Ago 25 - Ago 26</SelectItem>
+                      <SelectItem value="Ago26-Ago27">Ago 26 - Ago 27</SelectItem>
+                      <SelectItem value="Ago27-Ago28">Ago 27 - Ago 28</SelectItem>
+                      <SelectItem value="Ago28-Ago29">Ago 28 - Ago 29</SelectItem>
+                      <SelectItem value="Ago29-Ago30">Ago 29 - Ago 30</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
