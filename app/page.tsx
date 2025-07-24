@@ -160,7 +160,6 @@ export default function Home() {
                       <SelectItem value="ana-martinez">Marisol Salas Magaña</SelectItem>
                       <SelectItem value="ana-martinez">Reyna Del C. Cancino Robles</SelectItem>
                       <SelectItem value="ana-martinez">Carlos Valentín Veyna Martínez</SelectItem>
-                      <SelectItem value="ana-martinez">Carlos Valentín Veyna Martínez</SelectItem>
                       <SelectItem value="ana-martinez">Susana Sommers Manga</SelectItem>
                       <SelectItem value="ana-martinez">Benjamín Rodríguez Aquino</SelectItem>
                       <SelectItem value="ana-martinez">Alejandro Fajardo Guerrero</SelectItem>
