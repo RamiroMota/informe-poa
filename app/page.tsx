@@ -124,10 +124,23 @@ export default function Home() {
                       <SelectValue placeholder="Seleccionar programa" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="licenciatura-ingles">Licenciatura en inglés</SelectItem>
-                      <SelectItem value="licenciatura-matematicas">Licenciatura en matemáticas</SelectItem>
-                      <SelectItem value="licenciatura-administracion">Licenciatura en administración</SelectItem>
-                      <SelectItem value="ingenieria-sistemas">Ingeniería en sistemas</SelectItem>
+                      <SelectItem value="licenciatura-ingles">LIC. EN ARQUITECTURA</SelectItem>
+                      <SelectItem value="licenciatura-matematicas">ING. EN ANIMACIÓN Y DISEÑO DE CONTENIDOS DIGITALES</SelectItem>
+                      <SelectItem value="licenciatura-administracion">LIC. ADMINISTRACIÓN DE EMPRESAS</SelectItem>
+                      <SelectItem value="ingenieria-sistemas">LIC. EN CONTADURÍA PUBLICA</SelectItem>
+                      <SelectItem value="ingenieria-sistemas">LIC. EN MERCADOTECNIA</SelectItem>
+                      <SelectItem value="ingenieria-sistemas">LIC. EN PSICOLOGÍA</SelectItem>
+                      <SelectItem value="ingenieria-sistemas">LIC. EN DERECHO</SelectItem>
+                      <SelectItem value="ingenieria-sistemas">LIC. EN EDUCACIÓN FÍSICA Y DEPORTIVA</SelectItem>
+                      <SelectItem value="ingenieria-sistemas">LIC. EN ENFERMERÍA</SelectItem>
+                      <SelectItem value="ingenieria-sistemas">LIC. EN PSICOLOGÍA CLÍNICA</SelectItem>
+                      <SelectItem value="ingenieria-sistemas">LIC. EN PEDAGOGÍA</SelectItem>
+                      <SelectItem value="ingenieria-sistemas">LIC. QUÍMICO FARMACOBIOLOGO</SelectItem>
+                      <SelectItem value="ingenieria-sistemas">LIC. CIRUJANO ODONTOLOGO</SelectItem>
+                      <SelectItem value="ingenieria-sistemas">LIC. MEDICO CIRUJANO</SelectItem>
+                      <SelectItem value="ingenieria-sistemas">DIRECCIÓN ACADÉMICA Y ADMINISTRATIVA</SelectItem>
+                      <SelectItem value="ingenieria-sistemas">DIRECCIÓN DE PLANEACIÓN EDUCATIVA</SelectItem>
+                      <SelectItem value="ingenieria-sistemas">DIRECCIÓN DE EDUCACIÓN EN LÍNEA</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
@@ -142,9 +155,19 @@ export default function Home() {
                     </SelectTrigger>
                     <SelectContent>
                       <SelectItem value="fernando-arreola">Fernando Arreola Merino</SelectItem>
-                      <SelectItem value="maria-gonzalez">María González López</SelectItem>
-                      <SelectItem value="carlos-rodriguez">Carlos Rodríguez Pérez</SelectItem>
-                      <SelectItem value="ana-martinez">Ana Martínez Silva</SelectItem>
+                      <SelectItem value="maria-gonzalez">Emilio Curiel Herrera</SelectItem>
+                      <SelectItem value="carlos-rodriguez">Sergio Editson Echeverry Diaz</SelectItem>
+                      <SelectItem value="ana-martinez">Marisol Salas Magaña</SelectItem>
+                      <SelectItem value="ana-martinez">Reyna Del C. Cancino Robles</SelectItem>
+                      <SelectItem value="ana-martinez">Carlos Valentín Veyna Martínez</SelectItem>
+                      <SelectItem value="ana-martinez">Carlos Valentín Veyna Martínez</SelectItem>
+                      <SelectItem value="ana-martinez">Susana Sommers Manga</SelectItem>
+                      <SelectItem value="ana-martinez">Benjamín Rodríguez Aquino</SelectItem>
+                      <SelectItem value="ana-martinez">Alejandro Fajardo Guerrero</SelectItem>
+                      <SelectItem value="ana-martinez">Erick Vázquez Yañez</SelectItem>
+                      <SelectItem value="ana-martinez">Darwin González Sánchez</SelectItem>
+                      <SelectItem value="ana-martinez">Carlos Martin Santos Llaven</SelectItem>
+                      <SelectItem value="ana-martinez">Verónica Nevárez Ares</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
@@ -161,9 +184,11 @@ export default function Home() {
                     </SelectTrigger>
                     <SelectContent>
                       <SelectItem value="ago24-ago25">Ago 24 - Ago 25</SelectItem>
-                      <SelectItem value="ago23-ago24">Ago 23 - Ago 24</SelectItem>
-                      <SelectItem value="ene24-jul24">Ene 24 - Jul 24</SelectItem>
-                      <SelectItem value="ene25-jul25">Ene 25 - Jul 25</SelectItem>
+                      <SelectItem value="ago23-ago24">Ago 25 - Ago 26</SelectItem>
+                      <SelectItem value="ene24-jul24">Ago 26 - Ago 27</SelectItem>
+                      <SelectItem value="ene25-jul25">Ago 27 - Ago 28</SelectItem>
+                      <SelectItem value="ene25-jul25">Ago 28 - Ago 29</SelectItem>
+                      <SelectItem value="ene25-jul25">Ago 29 - Ago 30</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
