@@ -1,5 +1,13 @@
 import React from "react";
-import { Document, Page, Text, View, StyleSheet, Font, Image } from "@react-pdf/renderer";
+import {
+  Document,
+  Page,
+  Text,
+  View,
+  StyleSheet,
+  Font,
+  Image,
+} from "@react-pdf/renderer";
 
 // Definir estilos para el PDF
 const styles = StyleSheet.create({
@@ -113,10 +121,10 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     fontSize: 12,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     marginBottom: 10,
     borderBottomWidth: 1,
-    borderBottomColor: '#E5E7EB',
+    borderBottomColor: "#E5E7EB",
     paddingBottom: 5,
   },
   sectionContent: {
@@ -125,7 +133,7 @@ const styles = StyleSheet.create({
   },
   qrCodeContainer: {
     marginTop: 20,
-    alignItems: 'center',
+    alignItems: "center",
   },
 });
 
@@ -158,18 +166,22 @@ export const ReportPDF: React.FC<ReportPDFProps> = ({ data }) => {
   });
 
   // Filtrar filas con contenido para el reporte
-  const activeRows = data.rows.filter(row => 
-    row.actividad.trim() || row.meta.trim() || row.indicador.trim() || row.nivelLogro.trim()
+  const activeRows = data.rows.filter(
+    (row) =>
+      row.actividad.trim() ||
+      row.meta.trim() ||
+      row.indicador.trim() ||
+      row.nivelLogro.trim()
   );
 
   // Función para dividir texto largo en múltiples líneas
   const splitText = (text: string, maxLength: number = 50) => {
     if (text.length <= maxLength) return text;
-    
+
     const words = text.split(" ");
     let lines = [];
     let currentLine = "";
-    
+
     for (const word of words) {
       if ((currentLine + word).length > maxLength) {
         if (currentLine) {
@@ -182,11 +194,11 @@ export const ReportPDF: React.FC<ReportPDFProps> = ({ data }) => {
         currentLine += word + " ";
       }
     }
-    
+
     if (currentLine) {
       lines.push(currentLine.trim());
     }
-    
+
     return lines.join("\n");
   };
 
@@ -243,8 +255,8 @@ export const ReportPDF: React.FC<ReportPDFProps> = ({ data }) => {
 
           {/* Filas de la tabla */}
           {activeRows.map((row, index) => (
-            <View 
-              key={row.id} 
+            <View
+              key={row.id}
               style={index % 2 === 0 ? styles.tableRow : styles.tableRowAlt}
             >
               <View style={styles.cellNumber}>
@@ -271,31 +283,38 @@ export const ReportPDF: React.FC<ReportPDFProps> = ({ data }) => {
           <Text style={styles.averageText}>
             Promedio total: {data.promedioTotal}
           </Text>
-          <Text style={styles.dateText}>
-            Generado el {currentDate}
-          </Text>
+          <Text style={styles.dateText}>Generado el {currentDate}</Text>
         </View>
 
         {/* Observaciones Generales */}
         {data.observacionesGenerales && (
           <View style={styles.section}>
-            <Text style={styles.sectionTitle}>Observaciones generales</Text>
-            <Text style={styles.sectionContent}>{data.observacionesGenerales}</Text>
+            <Text style={styles.sectionTitle}>Observaciones generales:</Text>
+            <Text style={styles.sectionContent}>
+              {data.observacionesGenerales}
+            </Text>
           </View>
         )}
 
-        {/* Actividades no programadas */}
+        {/* Actividades No Programadas */}
         {data.actividadesNoProgramadas && (
           <View style={styles.section}>
-            <Text style={styles.sectionTitle}>Actividades que no estaban programadas</Text>
-            <Text style={styles.sectionContent}>{data.actividadesNoProgramadas}</Text>
+            <Text style={styles.sectionTitle}>
+              Actividades que no estaban programadas:
+            </Text>
+            <Text style={styles.sectionContent}>
+              {data.actividadesNoProgramadas}
+            </Text>
           </View>
         )}
 
-        {/* Código QR */}
+        {/* QR Code */}
         {data.qrCodeDataUrl && (
           <View style={styles.qrCodeContainer}>
-             <Image src={data.qrCodeDataUrl} style={{ width: 100, height: 100 }} />
+            <Image
+              src={data.qrCodeDataUrl}
+              style={{ width: 100, height: 100 }}
+            />
           </View>
         )}
       </Page>

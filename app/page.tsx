@@ -218,6 +218,9 @@ export default function Home() {
                       <SelectItem value="Sergio Editson Echeverry Diaz">
                         Sergio Editson Echeverry Diaz
                       </SelectItem>
+                      <SelectItem value="Vilma Janeth Narváez Martínez">
+                        Vilma Janeth Narváez Martínez
+                      </SelectItem>
                       <SelectItem value="Marisol Salas Magaña">
                         Marisol Salas Magaña
                       </SelectItem>
