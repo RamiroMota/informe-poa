@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+import { usePersistentState } from "@/hooks/usePersistentState";
 import dynamic from "next/dynamic";
 import { Button } from "@/components/ui/button";
 import {
@@ -35,15 +36,16 @@ interface TableRow {
 }
 
 export default function Home() {
-  const [programaEducativo, setProgramaEducativo] = useState("");
-  const [periodo, setPeriodo] = useState("");
-  const [cargoAcademico, setCargoAcademico] = useState("");
-  const [observacionesGenerales, setObservacionesGenerales] = useState("");
-  const [actividadesNoProgramadas, setActividadesNoProgramadas] = useState("");
+  const [programaEducativo, setProgramaEducativo] = usePersistentState("programaEducativo", "");
+  const [periodo, setPeriodo] = usePersistentState("periodo", "");
+  const [cargoAcademico, setCargoAcademico] = usePersistentState("cargoAcademico", "");
+  const [observacionesGenerales, setObservacionesGenerales] = usePersistentState("observacionesGenerales", "");
+  const [actividadesNoProgramadas, setActividadesNoProgramadas] = usePersistentState("actividadesNoProgramadas", "");
   const [qrCodeDataUrl, setQrCodeDataUrl] = useState("");
   const [fileName, setFileName] = useState("");
+  const [isReadyToRenderPdf, setIsReadyToRenderPdf] = useState(false);
 
-  const [rows, setRows] = useState<TableRow[]>([
+  const [rows, setRows] = usePersistentState<TableRow[]>("rows", [
     { id: 1, actividad: "", meta: "", indicador: "", nivelLogro: "" },
     { id: 2, actividad: "", meta: "", indicador: "", nivelLogro: "" },
     { id: 3, actividad: "", meta: "", indicador: "", nivelLogro: "" },
@@ -102,8 +104,13 @@ export default function Home() {
   };
 
   useEffect(() => {
-    setFileName(`informe-poa-${new Date().toISOString().split("T")[0]}.pdf`);
-  }, []);
+    const allFieldsFilled = !!(programaEducativo && periodo && cargoAcademico && rows.some(row => row.actividad || row.meta || row.indicador || row.nivelLogro));
+    setIsReadyToRenderPdf(allFieldsFilled);
+
+    if (allFieldsFilled) {
+      setFileName(`informe-poa-${new Date().toISOString().split("T")[0]}.pdf`);
+    }
+  }, [programaEducativo, periodo, cargoAcademico, rows, observacionesGenerales, actividadesNoProgramadas]);
 
   const reportData = {
     programaEducativo,
@@ -391,7 +398,7 @@ export default function Home() {
                               )
                             }
                             className="min-h-[60px] resize-none border-none focus:ring-0 focus:border-none shadow-none p-2"
-                            placeholder="Escribir nivel..."
+                            placeholder="Escribir nivel que va de 0 a 100 %..."
                           />
                         </td>
                       </tr>
@@ -454,19 +461,28 @@ export default function Home() {
                 <span className="font-bold">{calcularPromedio()}</span>
               </div>
 
-              <PDFDownloadLink
-                document={<ReportPDF data={reportData} />}
-                fileName={fileName}
-              >
-                {({ loading }) => (
-                  <Button
-                    disabled={loading}
-                    className="bg-gray-600 hover:bg-gray-700 text-white px-6 py-2"
-                  >
-                    {loading ? "Generando..." : "Generar reporte"}
-                  </Button>
-                )}
-              </PDFDownloadLink>
+              {isReadyToRenderPdf ? (
+                <PDFDownloadLink
+                  document={<ReportPDF data={reportData} />}
+                  fileName={fileName}
+                >
+                  {({ loading }) => (
+                    <Button
+                      disabled={loading}
+                      className="bg-gray-600 hover:bg-gray-700 text-white px-6 py-2"
+                    >
+                      {loading ? "Generando..." : "Generar reporte"}
+                    </Button>
+                  )}
+                </PDFDownloadLink>
+              ) : (
+                <Button
+                  disabled
+                  className="bg-gray-400 text-white px-6 py-2 cursor-not-allowed"
+                >
+                  Rellene los campos para generar
+                </Button>
+              )}
             </div>
           </CardContent>
         </Card>
