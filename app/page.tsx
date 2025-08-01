@@ -142,55 +142,55 @@ export default function Home() {
                       <SelectValue placeholder="Seleccionar programa" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="licenciatura-arquitectura">
+                      <SelectItem value="LIC. EN ARQUITECTURA">
                         LIC. EN ARQUITECTURA
                       </SelectItem>
-                      <SelectItem value="ingenieria-animacion">
+                      <SelectItem value="ING. EN ANIMACIÓN Y DISEÑO DE CONTENIDOS DIGITALES">
                         ING. EN ANIMACIÓN Y DISEÑO DE CONTENIDOS DIGITALES
                       </SelectItem>
-                      <SelectItem value="licenciatura-empresas">
+                      <SelectItem value="LIC. ADMINISTRACIÓN DE EMPRESAS">
                         LIC. ADMINISTRACIÓN DE EMPRESAS
                       </SelectItem>
-                      <SelectItem value="licenciatura-contaduria">
+                      <SelectItem value="LIC. EN CONTADURÍA PUBLICA">
                         LIC. EN CONTADURÍA PUBLICA
                       </SelectItem>
-                      <SelectItem value="licenciatura-nutricion">
+                      <SelectItem value="LIC. EN NUTRICIÓN">
                         LIC. EN NUTRICIÓN
                       </SelectItem>
-                      <SelectItem value="licenciatura-mercadotecnia">
+                      <SelectItem value="LIC. EN MERCADOTECNIA">
                         LIC. EN MERCADOTECNIA
                       </SelectItem>
-                      <SelectItem value="licenciatura-psicologia">
+                      <SelectItem value="LIC. EN PSICOLOGÍA">
                         LIC. EN PSICOLOGÍA
                       </SelectItem>
-                      <SelectItem value="licenciatura-derecho">
+                      <SelectItem value="LIC. EN DERECHO">
                         LIC. EN DERECHO
                       </SelectItem>
-                      <SelectItem value="licenciatura-educacion">
+                      <SelectItem value="LIC. EN EDUCACIÓN FÍSICA Y DEPORTIVA">
                         LIC. EN EDUCACIÓN FÍSICA Y DEPORTIVA
                       </SelectItem>
-                      <SelectItem value="licenciatura-enfermeria">
+                      <SelectItem value="LIC. EN ENFERMERÍA">
                         LIC. EN ENFERMERÍA
                       </SelectItem>
-                      <SelectItem value="licenciatura-pedagogia">
+                      <SelectItem value="LIC. EN PEDAGOGÍA">
                         LIC. EN PEDAGOGÍA
                       </SelectItem>
-                      <SelectItem value="licenciatura-quimica">
+                      <SelectItem value="LIC. QUÍMICO FARMACOBIOLOGO">
                         LIC. QUÍMICO FARMACOBIOLOGO
                       </SelectItem>
-                      <SelectItem value="licenciatura-odontologia">
+                      <SelectItem value="LIC. CIRUJANO ODONTOLOGO">
                         LIC. CIRUJANO ODONTOLOGO
                       </SelectItem>
-                      <SelectItem value="licenciatura-cirujano">
+                      <SelectItem value="LIC. MEDICO CIRUJANO">
                         LIC. MEDICO CIRUJANO
                       </SelectItem>
-                      <SelectItem value="direccion-academia">
+                      <SelectItem value="DIRECCIÓN ACADÉMICA Y ADMINISTRATIVA">
                         DIRECCIÓN ACADÉMICA Y ADMINISTRATIVA
                       </SelectItem>
-                      <SelectItem value="direccion-planificacion">
+                      <SelectItem value="DIRECCIÓN DE PLANEACIÓN EDUCATIVA">
                         DIRECCIÓN DE PLANEACIÓN EDUCATIVA
                       </SelectItem>
-                      <SelectItem value="direccion-linea">
+                      <SelectItem value="DIRECCIÓN DE EDUCACIÓN EN LÍNEA">
                         DIRECCIÓN DE EDUCACIÓN EN LÍNEA
                       </SelectItem>
                     </SelectContent>
